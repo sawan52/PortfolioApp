@@ -5,9 +5,10 @@
     <string name="lorem_text">Graphic design is the process of visual communication and problem-solving through the use of typography, photography, iconography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term "graphic design" is used synonymously.</string>
     <string name="job_name">Graphic Designer &amp; Programmer</string>
     <string name="lorem_text2">A portfolio, which is the primary method for demonstrating these qualifications, is usually required to be shown at job interviews, and is constantly developed throughout a designer\'s career.</string>
-    <string name="name">Bennet\nSebastian</string>
+    <string name="name">Bennett\nSebastian</string>
     <string name="current_job_post">Current Job Post</string>
     <string name="diploma">Computer Science Diploma</string>
     <string name="professional_experience">Professional Experience</string>
+    <string name="our_team">Our Team</string>
 
 </resources>

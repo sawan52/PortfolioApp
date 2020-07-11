@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.portfolioapp.cv.CVFragment;
 import com.example.portfolioapp.home.HomeFragment;
+import com.example.portfolioapp.team.TeamFragment;
 
 import java.util.Objects;
 
@@ -18,9 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
         Objects.requireNonNull(getSupportActionBar()).hide();
 
-        setCVFragment();
+        setTeamFragment();
+        //setCVFragment();
         //setHomeFragment();
 
+    }
+
+    void setTeamFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new TeamFragment()).commit();
     }
 
     void setCVFragment() {
@@ -30,6 +36,5 @@ public class MainActivity extends AppCompatActivity {
     void setHomeFragment() {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
     }
-
 
 }

@@ -42,7 +42,7 @@ public class CVAdapter extends RecyclerView.Adapter<CVAdapter.CVViewHolder> {
         return mData.size();
     }
 
-    public class CVViewHolder extends RecyclerView.ViewHolder{
+    public static class CVViewHolder extends RecyclerView.ViewHolder{
 
         TextView tvTitle, tvDescription;
 

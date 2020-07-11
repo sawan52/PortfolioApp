@@ -1,16 +1,15 @@
 package com.example.portfolioapp.cv;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.portfolioapp.R;
 
@@ -25,6 +24,17 @@ public class CVFragment extends Fragment {
     RecyclerView RvCv;
     CVAdapter adapter;
     List<CVItem> items;
+
+    public CVFragment() {
+        // Required empty public constructor
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_cv, container, false);
+    }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -42,6 +52,8 @@ public class CVFragment extends Fragment {
         items.add(new CVItem("28 April 2015", getString(R.string.lorem_text2)));
         items.add(new CVItem("02 September 2016", getString(R.string.lorem_text)));
         items.add(new CVItem("13 January 2018", getString(R.string.lorem_text2)));
+        items.add(new CVItem("13 January 2018", getString(R.string.lorem_text)));
+        items.add(new CVItem("20 April 2013", getString(R.string.lorem_text2)));
 
         adapter = new CVAdapter(items);
 
@@ -50,15 +62,4 @@ public class CVFragment extends Fragment {
 
     }
 
-    public CVFragment() {
-        // Required empty public constructor
-    }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cv, container, false);
-    }
 }
