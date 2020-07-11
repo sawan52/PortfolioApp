@@ -10,5 +10,8 @@
     <string name="diploma">Computer Science Diploma</string>
     <string name="professional_experience">Professional Experience</string>
     <string name="our_team">Our Team</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="member_name">Member Name</string>
+    <string name="_1">1</string>
 
 </resources>

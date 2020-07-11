@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.portfolioapp.cv.CVFragment;
 import com.example.portfolioapp.home.HomeFragment;
+import com.example.portfolioapp.portfolio.PortfolioFragment;
 import com.example.portfolioapp.team.TeamFragment;
 
 import java.util.Objects;
@@ -19,22 +20,27 @@ public class MainActivity extends AppCompatActivity {
 
         Objects.requireNonNull(getSupportActionBar()).hide();
 
-        setTeamFragment();
-        //setCVFragment();
         //setHomeFragment();
+        //setCVFragment();
+        //setTeamFragment();
+        setPortfolioFragment();
 
     }
 
-    void setTeamFragment() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new TeamFragment()).commit();
+    void setHomeFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
     }
 
     void setCVFragment() {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new CVFragment()).commit();
     }
 
-    void setHomeFragment() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
+    void setTeamFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new TeamFragment()).commit();
+    }
+
+    void setPortfolioFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new PortfolioFragment()).commit();
     }
 
 }

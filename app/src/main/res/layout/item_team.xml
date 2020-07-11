@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="John Doe"
+        android:text="@string/member_name"
         app:layout_constraintStart_toEndOf="@+id/team_item_image"
         app:layout_constraintTop_toTopOf="parent" />
 
