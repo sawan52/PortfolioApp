@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.portfolioapp.cv.CVFragment;
 import com.example.portfolioapp.home.HomeFragment;
 
 import java.util.Objects;
@@ -16,8 +17,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setHomeFragment();
-        // Adding more codes for CVFragment
+
+        setCVFragment();
+        //setHomeFragment();
+
+    }
+
+    void setCVFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new CVFragment()).commit();
     }
 
     void setHomeFragment() {

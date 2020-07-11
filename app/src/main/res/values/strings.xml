@@ -8,5 +8,6 @@
     <string name="name">Bennet\nSebastian</string>
     <string name="current_job_post">Current Job Post</string>
     <string name="diploma">Computer Science Diploma</string>
+    <string name="professional_experience">Professional Experience</string>
 
 </resources>
