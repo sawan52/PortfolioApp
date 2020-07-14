@@ -12,7 +12,7 @@ public class MenuUtil {
     public static final int PORTFOLIO_FRAGMENT_CODE = 2;
     public static final int TEAM_FRAGMENT_CODE = 3;
 
-    public static List<MenuItem> getMenuList(){
+    public static List<MenuItem> getMenuList() {
 
         List<MenuItem> list = new ArrayList<>();
 

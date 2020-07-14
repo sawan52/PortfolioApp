@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#F4F4F4"
-    android:layout_margin="2dp"
-    android:clickable="true"
     android:layout_height="100dp"
+    android:layout_margin="2dp"
+    android:background="#F4F4F4"
+    android:clickable="true"
+    android:focusable="true"
     android:foreground="?android:selectableItemBackground"
-    android:focusable="true">
+    android:orientation="vertical">
 
     <!--
     <TextView
@@ -21,9 +20,9 @@
 
     <ImageView
         android:id="@+id/item_portfolio_image"
-        android:src="@color/icon_tint_light"
-        android:scaleType="fitXY"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@color/icon_tint_light" />
 
 </LinearLayout>

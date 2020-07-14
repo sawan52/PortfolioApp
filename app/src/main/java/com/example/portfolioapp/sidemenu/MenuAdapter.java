@@ -35,9 +35,9 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
 
         holder.icon.setImageResource(mData.get(position).getIcon());
-        if (mData.get(position).isSelected()){
+        if (mData.get(position).isSelected()) {
             holder.isSelected.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             holder.isSelected.setVisibility(View.INVISIBLE);
         }
 
@@ -48,7 +48,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         return mData.size();
     }
 
-    public class MenuViewHolder extends RecyclerView.ViewHolder{
+    public class MenuViewHolder extends RecyclerView.ViewHolder {
 
         ImageView icon, isSelected;
 

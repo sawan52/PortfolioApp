@@ -45,7 +45,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder
         return mData.size();
     }
 
-    public static class TeamViewHolder extends RecyclerView.ViewHolder{
+    public static class TeamViewHolder extends RecyclerView.ViewHolder {
 
         TextView tv_name, tv_desc;
         ImageView img;

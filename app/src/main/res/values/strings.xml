@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">Portfolio App</string>
 
-    <!-- Simple text strings -->
+    <string name="app_name">Portfolio App</string>
     <string name="lorem_text">Graphic design is the process of visual communication and problem-solving through the use of typography, photography, iconography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term "graphic design" is used synonymously.</string>
     <string name="job_name">Graphic Designer &amp; Programmer</string>
     <string name="lorem_text2">A portfolio, which is the primary method for demonstrating these qualifications, is usually required to be shown at job interviews, and is constantly developed throughout a designer\'s career.</string>
@@ -13,5 +12,6 @@
     <string name="portfolio">Portfolio</string>
     <string name="member_name">Member Name</string>
     <string name="_1">1</string>
+    <string name="project_name">Project Name</string>
 
 </resources>

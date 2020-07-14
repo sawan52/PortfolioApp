@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
         //setHomeFragment();
         //setCVFragment();
         //setTeamFragment();
-        setPortfolioFragment();
+        //setPortfolioFragment();
 
     }
 
