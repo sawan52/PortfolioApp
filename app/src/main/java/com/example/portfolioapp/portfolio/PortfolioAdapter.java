@@ -3,6 +3,7 @@ package com.example.portfolioapp.portfolio;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,7 +33,8 @@ public class PortfolioAdapter extends RecyclerView.Adapter<PortfolioAdapter.Port
     @Override
     public void onBindViewHolder(@NonNull PortfolioViewHolder holder, int position) {
 
-        holder.tvPosition.setText(String.valueOf(position));
+        //holder.tvPosition.setText(String.valueOf(position));
+        holder.tvImage.setImageResource(mData.get(position).getImage());
 
     }
 
@@ -44,10 +46,12 @@ public class PortfolioAdapter extends RecyclerView.Adapter<PortfolioAdapter.Port
     public static class PortfolioViewHolder extends RecyclerView.ViewHolder{
 
         TextView tvPosition;
+        ImageView tvImage;
 
         public PortfolioViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvPosition = itemView.findViewById(R.id.item_portfolio_text);
+            //tvPosition = itemView.findViewById(R.id.item_portfolio_text);
+            tvImage = itemView.findViewById(R.id.item_portfolio_image);
         }
     }
 }

@@ -10,10 +10,19 @@
     android:foreground="?android:selectableItemBackground"
     android:focusable="true">
 
+    <!--
     <TextView
         android:id="@+id/item_portfolio_text"
         android:text="@string/_1"
         android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    -->
+
+    <ImageView
+        android:id="@+id/item_portfolio_image"
+        android:src="@color/icon_tint_light"
+        android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

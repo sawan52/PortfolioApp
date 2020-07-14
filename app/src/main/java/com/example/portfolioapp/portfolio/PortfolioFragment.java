@@ -47,6 +47,18 @@ public class PortfolioFragment extends Fragment {
         // create list of portfolio items
 
         items = new ArrayList<>();
+
+        items.add(new PortfolioItem(R.drawable.project_one, ""));
+        items.add(new PortfolioItem(R.drawable.project_two, ""));
+        items.add(new PortfolioItem(R.drawable.project_three, ""));
+        items.add(new PortfolioItem(R.drawable.project_four, ""));
+        items.add(new PortfolioItem(R.drawable.project_one, ""));
+        items.add(new PortfolioItem(R.drawable.project_two, ""));
+        items.add(new PortfolioItem(R.drawable.project_three, ""));
+        items.add(new PortfolioItem(R.drawable.project_four, ""));
+        items.add(new PortfolioItem(R.drawable.project_one, ""));
+
+        /*
         items.add(new PortfolioItem());
         items.add(new PortfolioItem());
         items.add(new PortfolioItem());
@@ -56,6 +68,7 @@ public class PortfolioFragment extends Fragment {
         items.add(new PortfolioItem());
         items.add(new PortfolioItem());
         items.add(new PortfolioItem());
+        */
 
         adapter = new PortfolioAdapter(items);
 
